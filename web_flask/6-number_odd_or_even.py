@@ -45,7 +45,7 @@ def number_template(n):
 
 @app.route('/number_odd_or_even/<int:n>', strict_slashes=False)
 def number_odd_or_even(n):
-    """Display an HTML page only if n is an integer to show if its even or odd"""
+    """Display an HTML page that shows whether n is  even or odd"""
     return render_template('6-number_odd_or_even.html', n=n,
                            s=("odd" if int(n) % 2 else "even"))
 
